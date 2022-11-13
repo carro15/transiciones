@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filtros css</title>
+    <style>
+        section{
+            display: flex;
+            flex-flow: row wrap;
+            gap: 5px;
+        }
+
+        /* filtro grayscale*/
+        /*.filtro{
+            filter: grayscale(100%);
+        }*/
+        /* sepia*/
+        /*.filtro{
+            filter: sepia(78%);
+        }*/
+        /* blue*/
+        /*.filtro{
+            filter:  blur(2px);
+        }*/
+
+        /*bright*/
+        .filtro{
+            filter: sepia(78%) brightness(60%) hue-rotate(20deg);
+        }
+
+        .filtro{
+            width: 30%;
+            filter: hue-rotate(226deg) drop-shadow(10px 10px 5px #000000)
+        }
+
+        /* opacity */
+
+        .filtro{
+
+            border-radius: 50%;
+            filter: sepia(78%) brightness(66%) hue-rotate(27deg) saturate(159%) opacity(54%);
+            opacity(45%) drop-shadow(-2px 0px 68px #000000);
+          
+        }
+
+        .filtro.filtro:hover{
+            /*transform: rotate(350deg);*/
+            transform: scale(0.5);
+            transform: skew(17deg)
+            transform: rotate(87deg) scale(0.6) skew(-8deg) translate(95px,-65px);
+        }
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>filtros con css</h1>
+
+    </header>
+    <main>
+        <section>
+            <img src="img/pex.jpeg" class="filtro" alt="img">
+            <img src="img/pexels.jpeg" class="filtro" alt="img">
+        </section>
+    </main>
+    
+</body>
+</html>
