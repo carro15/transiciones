@@ -50,7 +50,27 @@
             transform: scale(0.5);
             transform: skew(17deg)
             transform: rotate(87deg) scale(0.6) skew(-8deg) translate(95px,-65px);
+
         }
+
+        p{
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 
 
@@ -65,7 +85,12 @@
     </header>
     <main>
         <section>
-            <img src="img/pex.jpeg" class="filtro" alt="img">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id excepturi iste rerum
+                laborum facere natus quasi minima nemo, pariatur recusandae officiis veniam provident
+                 consectetur non numquam obcaecati omnis assumenda maiores.
+            </p>
+            <img src="img/pex.jpeg" class="filtro animation" alt="img">
             <img src="img/pexels.jpeg" class="filtro" alt="img">
         </section>
     </main>
